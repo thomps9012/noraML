@@ -1,9 +1,10 @@
 import pandas as pd
-import pprint
 
 iop_length_of_stay = pd.read_csv('nora_2021_IOP.csv')
+housing_length_of_stay = pd.read_csv('nora_2021_Housing.csv')
 
-distilled_data = iop_length_of_stay.drop(columns=['Provider ', 'Client ', 'Chart ', 'Facility', 'Encounter ', 'Charges ', 'Chargeable CoPay ', 'Copay Notes ', 'Copay ', 'Billed ', 'Appointment Status', 'Billing Errors'])
+# distilled_data = iop_length_of_stay.drop(columns=['Provider ', 'Client ', 'Chart ', 'Facility', 'Encounter ', 'Charges ', 'Chargeable CoPay ', 'Copay Notes ', 'Copay ', 'Billed ', 'Appointment Status', 'Billing Errors'])
+distilled_data = housing_length_of_stay.drop(columns=['Provider ', 'Client ', 'Chart ', 'Facility', 'Encounter ', 'Charges ', 'Chargeable CoPay ', 'Copay Notes ', 'Copay ', 'Billed ', 'Appointment Status', 'Billing Errors'])
 
 
 # find oldest encounter for each client from distilled data
