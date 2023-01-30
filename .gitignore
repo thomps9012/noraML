@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+2019_2022_encounters.csv
+2019_present_diagnosis.csv
+2021_MAT_clients.csv
+NOMS_entered_interviews.csv
+NOMS_statistics.py
+NORA_MOUD_DATA.html
+test.html

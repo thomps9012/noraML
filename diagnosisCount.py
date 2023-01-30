@@ -1,7 +1,7 @@
 import pandas as pd
 import pprint
 
-all_client_diagnoses = pd.read_csv('2021_encounters_with_diagnoses.csv')
+all_client_diagnoses = pd.read_csv('2019_present_diagnosis.csv')
 print(all_client_diagnoses.columns)
 
 nora_clients = all_client_diagnoses.drop_duplicates('Pid').drop(columns=['Date Of Service', 'Encounter', 'Age', 'Service Code'])
